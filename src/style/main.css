@@ -1,0 +1,129 @@
+body {
+  background-color: #B0E0E6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 3em;
+  padding: 0;
+}
+.home{
+    position: relative;
+    text-align: center;
+    font-family: "Segoe UI";
+    padding: 1em, 2em, 0, 0;
+    color: #778899;
+    font-size: 2em;
+    text-shadow: 0px 30px 20px rgba(150, 150, 150, 0.75);
+    text-decoration: blink;
+  }
+.page {
+  padding-top: 2em;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.page__error {
+  position: absolute;
+  padding: 5px;
+  color: #fff;
+  background-color: #f44336;
+}
+
+.pokemons {
+  margin: 0;
+  padding: 2;
+  list-style: none;
+}
+
+.pokemons__item {
+  display: inline-flex;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1.5em;
+  margin: 10px;
+
+}
+
+.pokemon {
+  box-shadow: 5px 5px #48D1CC, 9px 9px #20B2AA, 13px 13px #1E90FF;
+  position: relative;
+
+  overflow: hidden;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 7.5px;
+}
+
+.pokemon__sprite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.pokemon,
+.pokemon__sprite {
+  width: 140px;
+  height: 140px;
+}
+
+.pokemon__name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  margin: 0;
+  height: 1.8em;
+  background-color: #778899;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: inherit;
+  pointer-events: none;
+}
+.modal{
+ color: #696969; 
+  width: 18em;
+  height: 22em;
+  font-size: 16px;
+  font-family: inherit;
+  border-radius: 7.5px;
+  margin: 10px, 10px,10px, 10px;
+  padding-bottom: 10px;
+}
+.modal-img{
+  position: relative;
+  width: 8em;
+  height: 8em;
+  margin: 3em, 3em, 3em,3em;
+  padding: 3em, 5em;
+  border-radius: 7.5px;
+  border-color: gray;
+}
+.modal-img:before{
+  -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: none !important;
+}
+
+
+@media (min-width: 992px) {
+  .pokemon,
+  .pokemon__sprite {
+    width: 160px;
+    height: 160px;
+  }
+}
